@@ -1,0 +1,41 @@
+2019-11-01 12:16:31.355 -05:00 [WRN] end of Main Method
+2019-11-01 12:18:22.677 -05:00 [INF] Play Method
+2019-11-01 12:19:02.751 -05:00 [WRN] end of Main Method
+2019-11-01 12:22:21.937 -05:00 [INF] Play Method
+2019-11-01 12:22:21.995 -05:00 [DBG] {item.title}
+2019-11-01 12:22:40.626 -05:00 [INF] Play Method
+2019-11-01 12:22:40.688 -05:00 [DBG] {@item.title}
+2019-11-01 12:23:04.885 -05:00 [INF] Play Method
+2019-11-01 12:23:04.945 -05:00 [DBG] Untitled
+2019-11-01 12:23:24.957 -05:00 [DBG] Untitled
+2019-11-01 12:23:44.963 -05:00 [DBG] Untitled
+2019-11-01 12:23:44.965 -05:00 [DBG] Untitled
+2019-11-01 12:23:44.966 -05:00 [WRN] end of Main Method
+2019-11-01 12:28:35.576 -05:00 [INF] Play Method
+2019-11-01 12:28:35.645 -05:00 [DBG] {"BitRate":320,"title":"Untitled","duration":"00:00:00","$type":"Audible"}
+2019-11-01 12:28:55.661 -05:00 [DBG] {"BitRate":320,"title":"Untitled","duration":"00:00:00","$type":"Song"}
+2019-11-01 12:29:15.672 -05:00 [DBG] {"FrameRate":24,"title":"Untitled","duration":"00:00:00","$type":"Movie"}
+2019-11-01 12:29:15.674 -05:00 [DBG] {"FrameRate":0,"title":"Untitled","duration":"00:00:00","$type":"Photo"}
+2019-11-01 12:29:15.676 -05:00 [WRN] end of Main Method
+2019-11-01 12:31:43.878 -05:00 [INF] Play Method
+2019-11-01 12:31:43.935 -05:00 [DBG] Untitled "00:00:00"
+2019-11-01 12:32:03.947 -05:00 [DBG] Untitled "00:00:00"
+2019-11-01 12:32:23.956 -05:00 [DBG] Untitled "00:00:00"
+2019-11-01 12:32:23.957 -05:00 [DBG] Untitled "00:00:00"
+2019-11-01 12:32:23.959 -05:00 [WRN] end of Main Method
+2019-11-01 12:36:51.151 -05:00 [INF] Play Method
+2019-11-01 12:36:51.211 -05:00 [DBG] Untitled 00:00:00
+BitRate: 320
+2019-11-01 12:37:11.221 -05:00 [DBG] Untitled 00:00:00
+BitRate: 320
+2019-11-01 12:37:31.228 -05:00 [DBG] Untitled 00:00:00
+FrameRate: 24
+2019-11-01 12:37:31.229 -05:00 [DBG] Untitled 00:00:00
+FrameRate: 0
+2019-11-01 12:37:31.230 -05:00 [WRN] end of Main Method
+2019-11-01 12:38:38.682 -05:00 [INF] Play Method
+2019-11-01 12:38:38.753 -05:00 [DBG] {"BitRate":320,"title":"Untitled","duration":"00:00:00","$type":"Audible"}
+2019-11-01 12:38:58.769 -05:00 [DBG] {"BitRate":320,"title":"Untitled","duration":"00:00:00","$type":"Song"}
+2019-11-01 12:39:18.777 -05:00 [DBG] {"FrameRate":24,"title":"Untitled","duration":"00:00:00","$type":"Movie"}
+2019-11-01 12:39:18.779 -05:00 [DBG] {"FrameRate":0,"title":"Untitled","duration":"00:00:00","$type":"Photo"}
+2019-11-01 12:39:18.781 -05:00 [WRN] end of Main Method
