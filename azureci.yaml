@@ -1,0 +1,17 @@
+name: $(date:yyyymmdd)$(rev:.rr) #20191209.00 (what it should look like [with .00 incrementing])
+
+triggers:
+  - master
+
+stages:
+  - stage: compile
+    jobs:
+        - job: aspnet
+          pool:
+            vmImage: ubuntu-1804
+          steps:
+            - script: |
+              dotnet build 3_dedvops/Devops.sln
+  - stage: test
+  - stage: pack
+  - stage: deploy
