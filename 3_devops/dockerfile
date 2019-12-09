@@ -1,0 +1,15 @@
+FROM mcr.microsoft.com/dotnet/core/sdk as build
+WORKDIR /aspnet
+COPY . .
+RUN dotnet build
+RUN dotnet publish --no-restore -c Release -o out
+
+# CMD dotnet run --project Devops.Client/Devops.Client.csproj
+  # don't use the above, as that is specific to command shells (which use spaces to separate commands)
+  # the format on line 5 (exec form parsed as JSON array) is universal, in case trying to directly inject a shell command
+  # wouldn't work
+
+FROM mcr.microsoft.com/dotnet/core/aspnet
+WORKDIR /dist
+COPY --from=build /aspnet/out .
+CMD ["dotnet", "Devops.Client.dll"]

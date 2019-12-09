@@ -5,8 +5,7 @@ Vagrant.configure("2") do |c|
     m.vm.box = "generic/ubuntu1804"
     m.vm.box_version = "1.9.36"
     m.vm.hostname = "master"
-
-    m.vm.network "private_network", type: "dhcp"
+    m.vm.network "private_network", ip: '192.168.152.220'
 
       m.vm.provider "hyperv" do |h|
         h.enable_virtualization_extensions = true
