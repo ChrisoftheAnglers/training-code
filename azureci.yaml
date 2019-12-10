@@ -22,3 +22,7 @@ stages:
               command: test
               projects: 3_devops/Devops.sln
               arguments: --collect:"XPlat Code Coverage"
+          - task: PublishCodeCoverageResult@2
+            inputs:
+              coverageTool: Cobertura
+              filepath: ./TestResults
