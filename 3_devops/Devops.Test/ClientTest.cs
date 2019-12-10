@@ -14,10 +14,10 @@ namespace Devops.Test
       // arrange
       var home = new HomeController(logger);
       // act
-      var index = home.Index();
+      var view = home.Index();
 
       // assert
-      Assert.NotNull(index);
+      Assert.NotNull(view);
     }
     [Fact]
     public void Test_PrivacyPage()
