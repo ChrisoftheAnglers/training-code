@@ -1,4 +1,4 @@
-name: $(date:yyyymmdd)$(rev:.rr) #20191209.00 (what it should look like [with .00 incrementing])
+name: $(date:yyyyMMdd)$(rev:.rr) #20191209.00 (what it should look like [with .00 incrementing])
 
 trigger:
   - master
@@ -6,9 +6,20 @@ trigger:
 stages:
   - stage: compile
     jobs:
-        - job: aspnet
-          pool:
-            vmImage: ubuntu-18.04
-          steps:
-            - script: |
-                dotnet build 3_devops/Devops.sln
+      - job: aspnet_build
+        pool:
+          vmImage: ubuntu-18.04
+        steps:
+          - script: |
+            dotnet build 3_devops/Devops.sln
+  - stage: test
+    jobs:
+      - job: aspnet_test
+        pool:
+          vmImage: ubuntu-18.04
+        steps:
+          - task: DotNetCoreCLI@2
+            inputs:
+              command: 'test'
+              projects: '3_devops/Devops.sln'
+              arguments: '--collect:"XPlat Code Coverage"'
