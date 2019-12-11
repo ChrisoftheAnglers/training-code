@@ -32,7 +32,7 @@ stages:
         pool:
           vmImage: ubuntu-18.04
         steps:
-          - script: dotnet install --global dotnet-sonarscanner
+          - script: dotnet tool install --global dotnet-sonarscanner
           - script: |
               dotnet sonarscanner begin /k:devops-training /d:sonar-login=$(SONAR_TOKEN) /o:chrisoftheanglers
               dotnet build 3_devops/Devops.sln
@@ -56,5 +56,3 @@ stages:
           - script: docker image push chrisoftheanglers/devops:$(BUILD_NAME)
             env:
               BUILD_NAME: $(Build.DefinitionName)
-
-#Retry NuGet
