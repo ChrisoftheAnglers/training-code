@@ -56,3 +56,5 @@ stages:
           - script: docker image push chrisoftheanglers/devops:$(BUILD_NAME)
             env:
               BUILD_NAME: $(Build.DefinitionName)
+
+#Retry NuGet
